@@ -1,45 +1,86 @@
-* {
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
-
 body {
-  background-color: rgb(28, 2, 33);
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  top: 50px;
-  margin: 0 auto;
-  width: 500px;
-  height: 500px;
-  position: relative;
+  width: 75vh;
+  height: 75vh;
+  outline: 1px dotted white;
   display: flex;
-  background-color: aliceblue;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.frame {
+  width: 30%;
+  height: 50%;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
 }
 
 .card-one {
-  width: 300px;
-  height: 500px;
-  background-color: rgb(123, 94, 123);
-  border: 3px solid rgba(123, 94, 123, 1);
-  border-radius: 25px;
+  position: relative;
+  top: -2%;
+  left: 15%;
+  rotate: -25deg;
+  background-color: darkblue;
+  z-index: 1;
 }
 
 .card-two {
-  width: 300px;
-  height: 500px;
-  background-color: rgb(123, 94, 123);
-  border: 3px solid rgba(123, 94, 123, 1);
-  border-radius: 25px;
-  display: none;
+  position: relative;
+  background-color: darkslategrey;
+  z-index: 2;
 }
 
-.card-3 {
-  width: 300px;
-  height: 500px;
-  background-color: rgb(123, 94, 123);
-  border: 3px solid rgba(123, 94, 123, 1);
-  border-radius: 25px;
-  display: none;
+.card-three {
+  position: relative;
+  top: -2%;
+  right: 15%;
+  rotate: 25deg;
+  background-color: darkred;
+  z-index: 1;
+}
+
+.frame:hover {
+  scale: 2;
+}
+
+.card-one:hover {
+  position: relative;
+  background-color: darkblue;
+  top: 0%;
+  left: 32%;
+  rotate: 0deg;
+  background-image: url("./data/cat1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 4;
+}
+
+.card-two:hover {
+  position: relative;
+  background-color: darkslategrey;
+  background-image: url("./data/cat2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 4;
+}
+
+.card-three:hover {
+  position: relative;
+  top: 0%;
+  right: 32%;
+  rotate: 0deg;
+  background-color: darkred;
+  background-image: url("./data/cat3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 4;
 }
