@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(28, 2, 33);
+}
+
+.container {
+  top: 50px;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  background-color: aliceblue;
+}
+
+.card-one {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(123, 94, 123);
+  border: 3px solid rgba(123, 94, 123, 1);
+  border-radius: 25px;
+}
+
+.card-two {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(123, 94, 123);
+  border: 3px solid rgba(123, 94, 123, 1);
+  border-radius: 25px;
+  display: none;
+}
+
+.card-3 {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(123, 94, 123);
+  border: 3px solid rgba(123, 94, 123, 1);
+  border-radius: 25px;
+  display: none;
+}
